@@ -1,6 +1,10 @@
 radio.onReceivedString(function (receivedString) {
     RX_Txt = receivedString
 })
+// Set Radio Group to be the same oa the sending device.
+// 
+// Initialise ColorBit Display
+// 
 let LED = 0
 let loop2 = 0
 let loop1 = 0
