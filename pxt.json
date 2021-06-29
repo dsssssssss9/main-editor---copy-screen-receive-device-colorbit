@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "colorbit": "github:51bit/colorbit#v0.1.2"
     },
     "files": [
         "main.blocks",

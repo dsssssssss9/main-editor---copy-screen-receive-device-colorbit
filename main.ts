@@ -1,15 +1,17 @@
 radio.onReceivedString(function (receivedString) {
     RX_Txt = receivedString
 })
-input.onButtonPressed(Button.B, function () {
-	
-})
 let LED = 0
 let loop2 = 0
 let loop1 = 0
 let RX_Txt = ""
 radio.setGroup(42)
-basic.showString("Go")
+let colorbit_51bit = colorbit.initColorBit(DigitalPin.P2, BitColorMode.RGB)
+colorbit_51bit.setBrightness(16)
+colorbit_51bit.show()
+basic.showString("Ready")
+colorbit_51bit.showScrollStringColor("Ready", colorbit.colors(BitColors.Red))
+colorbit_51bit.clear()
 basic.forever(function () {
     loop1 = parseFloat(RX_Txt.charAt(0))
     loop2 = parseFloat(RX_Txt.charAt(1))
