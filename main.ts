@@ -17,8 +17,8 @@ basic.forever(function () {
     loop2 = parseFloat(RX_Txt.charAt(1))
     LED = parseFloat(RX_Txt.charAt(2))
     if (LED == 1) {
-        led.plot(loop1, loop2)
+        colorbit_51bit.drawColorBit(loop1, loop2, colorbit.colors(BitColors.Blue))
     } else {
-        led.unplot(loop1, loop2)
+        colorbit_51bit.drawColorBit(loop1, loop2, colorbit.colors(BitColors.Black))
     }
 })
